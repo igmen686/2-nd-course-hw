@@ -15,6 +15,8 @@ a {
 .center {
   padding-left: calc(50% - 624px);
   padding-right: calc(50% - 624px);
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .top {
@@ -22,7 +24,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 1024px;
+}
+.top-content {
+  padding-top: 217px;
+  padding-bottom: 493px;
 }
 .top-content-title {
   color: #ffffff;
@@ -30,16 +35,13 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 789px;
-  padding-top: 217px;
 }
 .top-content-text {
-  width: 481px;
   color: #ffffff;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  padding-top: 32px;
+  margin-top: 32px;
   line-height: 32px;
 }
 .top-content .button {
@@ -49,12 +51,15 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 234px;
-  height: 49px;
   border-radius: 30px;
   border: 0px;
   background: #9C0332;
   margin-top: 44px;
+  transition: 0.3s;
+  padding: 13px 74px;
+}
+.top-content .button:hover {
+  transform: scale(1.05);
 }
 
 .main .section .for {
@@ -65,7 +70,7 @@ a {
 .main .section .for-item {
   display: flex;
   align-items: end;
-  width: 347px;
+  width: 100%;
   height: 268px;
   border: 0px;
   border-radius: 16px;
@@ -78,6 +83,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: 0.3s;
+}
+.main .section .for-item:hover {
+  transform: scale(1.05);
 }
 .main .section .for-item-1 {
   background-image: url(img/f_item_1.jpg);
