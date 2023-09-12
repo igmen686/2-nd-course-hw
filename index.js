@@ -52,3 +52,5 @@ alert (user.info);
 
 let namee = prompt('Введите ваше имя');
 alert(`Привет ${namee}!`);
+
+
