@@ -45,9 +45,8 @@ let user = {
 user.cityOfResidence = 'Москва';
 user.age = 33;
 delete user.cityOfResidence;
-
 let info = prompt(`Какую информацию хотите узнать о пользователе?`);
-alert (user.info);
+alert (user[info]);
 
 
 let namee = prompt('Введите ваше имя');
