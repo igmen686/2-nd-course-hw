@@ -200,30 +200,17 @@ a {
   }
   .main .section-for-item {
     display: flex;
-    align-items: end;
-    width: 100%;
-    height: 300px;
-    border: 0px;
-    border-radius: 16px;
-    color: #ffffff;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    padding: 0 32px 32px 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: 0.3s;
+    max-width: 100%;
+    padding: 0 0 32px 14.5px;
   }
   .main .section__content {
     display: flex;
     padding: 51px 0 85px 0;
     flex-direction: column;
-    gap: 64px;
+    gap: 32px;
   }
   .main .section__content__text {
-    width: 343px;
+    max-width: 343px;
   }
   .main .section__content__left {
     display: flex;
