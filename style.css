@@ -19,32 +19,32 @@ a {
   margin-right: 24px;
 }
 
-.top {
-  background-image: url(img/bg_top.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.top-content {
-  padding-top: 217px;
-  padding-bottom: 493px;
-}
-.top-content-title {
+.title {
   color: #ffffff;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.top-content-text {
+
+.subtitle {
   color: #ffffff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  color: #ffffff;
+  width: 481px;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  margin-top: 32px;
   line-height: 32px;
 }
-.top-content .button {
+
+.button {
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -54,24 +54,42 @@ a {
   border-radius: 30px;
   border: 0px;
   background: #9C0332;
-  margin-top: 44px;
+  width: 234px;
   transition: 0.3s;
   padding: 13px 74px;
 }
-.top-content .button:hover {
+
+.button:hover {
   transform: scale(1.05);
 }
 
-.main .section .for {
+.top {
+  background-image: url(img/bg_top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__content {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  padding-top: 217px;
+  padding-bottom: 493px;
+}
+.top__content__title {
+  font-size: 64px;
+}
+
+.main .section-for {
   display: flex;
   gap: 32px;
   padding: 128px 0;
 }
-.main .section .for-item {
+.main .section-for-item {
   display: flex;
   align-items: end;
   width: 100%;
-  height: 268px;
+  height: 300px;
   border: 0px;
   border-radius: 16px;
   color: #ffffff;
@@ -85,17 +103,37 @@ a {
   background-size: cover;
   transition: 0.3s;
 }
-.main .section .for-item:hover {
+.main .section-for-item:hover {
   transform: scale(1.05);
 }
-.main .section .for-item-1 {
+.main .section-for-item-1 {
   background-image: url(img/f_item_1.jpg);
 }
-.main .section .for-item-2 {
+.main .section-for-item-2 {
   background-image: url(img/f_item_2.jpg);
 }
-.main .section .for-item-3 {
+.main .section-for-item-3 {
   background-image: url(img/f_item_3.jpg);
+}
+.main .section__content {
+  display: flex;
+  padding: 234px 0;
+}
+.main .section__content__text {
+  width: 584px;
+}
+.main .section__content__left {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.main .section__content__right {
+  background-image: url(/img/undraw_video_game_night_8h8m\ 1.svg);
+  width: 100%;
+  height: 268px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .footer-content {
@@ -110,4 +148,108 @@ a {
   font-weight: 400;
   line-height: normal;
   padding: 32px 0;
+}
+
+@media (max-width: 767px) {
+  /*phones*/
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .text {
+    width: 343px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 32px;
+  }
+  .button {
+    text-align: center;
+  }
+  .top {
+    background-image: url(img/bg_top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .top__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+    padding: 238px 0;
+  }
+  .top__content__title {
+    font-size: 64px;
+  }
+  .main .section-for {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 128px 0;
+    flex-direction: column;
+  }
+  .main .section-for-item {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 300px;
+    border: 0px;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 0 32px 32px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+  }
+  .main .section__content {
+    display: flex;
+    padding: 51px 0 85px 0;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .main .section__content__text {
+    width: 343px;
+  }
+  .main .section__content__left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+  }
+  .main .section__content__right {
+    background-image: url(/img/undraw_video_game_night_8h8m\ 1.svg);
+    width: 100%;
+    height: 268px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-content-text {
+    color: #ffffff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 32px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

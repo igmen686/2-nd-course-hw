@@ -23,51 +23,65 @@ a {
     margin-right: 24px;
 }
 
+.title {
+    color: $color-text-white;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.subtitle {
+    color: $color-text-white;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.text {
+    color: $color-text-white;
+    width: 481px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+.button {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 30px;
+    border: 0px;
+    background: #9C0332;
+    width: 234px;
+    transition: 0.3s;
+    padding: 13px 74px;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+
 .top {
     background-image: url(img/bg_top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    &-content {
+    &__content {
+        display: flex;
+        gap: $gap;
+        flex-direction: column;
         padding-top: 217px;
         padding-bottom: 493px;
-        &-title {
-            color: $color-text-white;
-            font-size: 64px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-        &-text {
-            color: $color-text-white;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            margin-top: 32px;
-            line-height: 32px;
-        }
-        .button {
-            color: #FFF;
-            font-family: 'Montserrat', sans-serif;;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            border-radius: 30px;
-            border: 0px;
-            background: #9C0332;
-            margin-top: 44px;
-            transition: 0.3s;
-            padding: 13px 74px;
-        }
-        .button:hover {
-            transform: scale(1.05);
+        &__title {
+            font-size: 64px;    
         }
     }
 }
 .main {
     .section {
-        .for {
+        &-for {
             display: flex;
             gap: $gap;
             padding: 128px 0;
@@ -75,7 +89,7 @@ a {
                 display: flex;
                 align-items: end;
                 width: 100%;
-                height: 300px - $gap;
+                height: 300px;
                 border: 0px;
                 border-radius: 16px;
                 color: $color-text-white;
@@ -102,6 +116,26 @@ a {
                 background-image: url(img/f_item_3.jpg);
             }
         }
+        &__content {
+            display: flex;
+            padding: 234px 0;
+            &__text {
+                width: 584px;
+            }
+            &__left {
+                display: flex;
+                gap: $gap;
+                flex-direction: column;
+            }
+            &__right {
+                background-image: url(/img/undraw_video_game_night_8h8m\ 1.svg);
+                width: 100%;
+                height: 300px - $gap;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
     }
         
 }
@@ -117,6 +151,117 @@ a {
             font-weight: 400;
             line-height: normal;
             padding: $gap 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    /*phones*/
+    .center {
+        padding-left: calc(50% - 171.5px);
+        padding-right: calc(50% - 171.5px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .title {
+        text-align: center;
+        font-size: 32px;      
+    }
+    .text {
+        width: 343px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 32px;
+    }
+    .button {
+        text-align: center;
+    }
+    .top {
+        background-image: url(img/bg_top.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        &__content {
+            display: flex;
+            align-items: center;
+            gap: $gap;
+            flex-direction: column;
+            padding: 238px 0;
+            &__title {
+                font-size: 64px;    
+            }
+        }
+    }
+    .main {
+        .section {
+            &-for {
+                display: flex;
+                align-items: center;
+                gap: $gap;
+                padding: 128px 0;
+                flex-direction: column;
+                &-item {
+                    display: flex;
+                    align-items: end;
+                    width: 100% - 2 * $gap;
+                    height: 300px;
+                    border: 0px;
+                    border-radius: 16px;
+                    color: $color-text-white;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                    padding: $gap;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    transition: 0.3s;
+                }
+            }
+            &__content {
+                display: flex;
+                padding: 51px 0 85px 0;
+                flex-direction: column;
+                gap: $gap * 2;
+                &__text {
+                    width: 343px;
+                }
+                &__left {
+                    display: flex;
+                    align-items: center;
+                    gap: $gap;
+                    flex-direction: column;
+                }
+                &__right {
+                    background-image: url(/img/undraw_video_game_night_8h8m\ 1.svg);
+                    width: 100%;
+                    height: 300px - $gap;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+        }
+            
+    }
+    .footer {
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-text {
+                color: $color-text-white;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding: $gap 0;
+            }
         }
     }
 }
