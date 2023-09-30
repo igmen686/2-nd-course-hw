@@ -63,10 +63,16 @@ alert(`Привет ${nameUser}!`);
 */
 
 /* Домашняя работа 3*/
-/*
+
 //1
 let password = 'super_password123';
 let input = prompt('Введите пароль')
+    if (input = password) {
+        alert('Пароль введен верно');
+    } else {
+        alert('Пароль введен неправильно');
+    }
+    /*
     switch (input) {
         case (password):
             alert('Пароль введен верно');
@@ -75,6 +81,7 @@ let input = prompt('Введите пароль')
         default: alert('Пароль введен неправильно');
             break;
     }
+    */
 
 //2
 let c = 5;
@@ -142,4 +149,28 @@ let monthNumber = Number(prompt('Введите порядковый номер 
         default: alert('Конец света');
             break;
     }
+
+
+/*
+while(true) {
+        const msg = prompt('Введите ваше сообщение');
+        if (msg === 'continue') {
+            continue;
+        }
+        console.log(msg);
+        if (msg === 'break') {
+            break;
+        }
+    }
+
+while(true) {
+    const msg = prompt('Введите сообщение');
+    if (msg === 'continue') {
+        continue;
+    }
+    console.log(msg);
+    if (msg === 'break') {
+        break;
+    }
+}
 */
