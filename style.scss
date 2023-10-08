@@ -19,6 +19,8 @@ a {
 .center {
     padding-left: calc(50% - 624px);
     padding-right: calc(50% - 624px);
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .top {
@@ -26,24 +28,22 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1024px;
     &-content {
+        padding-top: 217px;
+        padding-bottom: 493px;
         &-title {
             color: $color-text-white;
             font-size: 64px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            width: 789px;
-            padding-top: 217px;
         }
         &-text {
-            width: 481px;
             color: $color-text-white;
             font-size: 18px;
             font-style: normal;
             font-weight: 300;
-            padding-top: 32px;
+            margin-top: 32px;
             line-height: 32px;
         }
         .button {
@@ -53,13 +53,15 @@ a {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            width: 234px;
-            height: 49px;
             border-radius: 30px;
             border: 0px;
             background: #9C0332;
             margin-top: 44px;
-            
+            transition: 0.3s;
+            padding: 13px 74px;
+        }
+        .button:hover {
+            transform: scale(1.05);
         }
     }
 }
@@ -72,7 +74,7 @@ a {
             &-item {
                 display: flex;
                 align-items: end;
-                width: 379px - $gap;
+                width: 100%;
                 height: 300px - $gap;
                 border: 0px;
                 border-radius: 16px;
@@ -85,6 +87,10 @@ a {
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
+                transition: 0.3s;
+            }
+            &-item:hover {
+                transform: scale(1.05);
             }
             &-item-1 {
                 background-image: url(img/f_item_1.jpg);                
