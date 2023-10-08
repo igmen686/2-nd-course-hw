@@ -63,7 +63,7 @@ alert(`Привет ${nameUser}!`);
 */
 
 /* Домашняя работа 3*/
-
+/*
 //1
 let password = 'super_password123';
 let input = prompt('Введите пароль')
@@ -72,7 +72,7 @@ let input = prompt('Введите пароль')
     } else {
         alert('Пароль введен неправильно');
     }
-    /*
+    
     switch (input) {
         case (password):
             alert('Пароль введен верно');
@@ -81,7 +81,7 @@ let input = prompt('Введите пароль')
         default: alert('Пароль введен неправильно');
             break;
     }
-    */
+    
 
 //2
 let c = 5;
@@ -149,7 +149,7 @@ let monthNumber = Number(prompt('Введите порядковый номер 
         default: alert('Конец света');
             break;
     }
-
+*/
 
 /*
 while(true) {
@@ -174,3 +174,63 @@ while(true) {
     }
 }
 */
+/*
+for (let dayNumber = 1; friday <= 31; dayNumber++) {
+    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+    friday += 7;
+}
+*/
+
+// Домашняя работа №4
+//1
+let i = 1
+while (i <= 2) {
+    alert('Hello');
+    i++;
+}
+
+//2
+let a = 1
+while (a <= 5) {
+    console.log(a);
+    a++;
+}
+
+//3
+let r = 7
+while (r <= 22) {
+    console.log(r);
+    r++;
+}
+
+//4
+const obj = {
+    Коля: 200,
+    Вася: 300,
+    Петя: 400,
+};
+
+for (key in obj) {
+    if (obj[key]) {
+        alert(`${key} - зарплата ${obj[key]} долларов`);
+    }
+}
+
+//5
+let n = 1000,
+    count = 0;
+do {
+    n = n / 2;
+    count = count + 1;
+} while (n >= 50);
+console.log(n);
+console.log(count);
+
+//6
+let friday = 2
+while (friday <= 31) {
+    console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+    friday += 7;
+}
+
+
