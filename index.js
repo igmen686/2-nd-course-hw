@@ -180,7 +180,7 @@ for (let dayNumber = 1; friday <= 31; dayNumber++) {
     friday += 7;
 }
 */
-
+/*
 // Домашняя работа №4
 //1
 let i = 1
@@ -233,4 +233,172 @@ while (friday <= 31) {
     friday += 7;
 }
 
+*/
+
+//Домашняя работа 5 (Функции)
+//1
+function min(a, b) {
+    if (a <= b) {
+        console.log(a);
+    } else {
+        console.log(b);
+    }
+}
+
+let resultOne = min(8, 4)
+
+console.log(resultOne);
+
+//2
+function even(n) {
+    if (n % 2 == 0) {
+        console.log(n);
+    } else {
+        console.log(n + 1);
+    }
+}
+
+let resultTwo = even(5)
+
+console.log(resultTwo);
+
+//3
+//3.1
+function inSquare(y) {
+    return y ** 2;
+}
+
+let resultThreeOne = inSquare(4)
+
+console.log(resultThreeOne);
+
+//3.2
+function outSquare(x) {
+    return Math.sqrt(x);
+}
+
+let resultThreeTwo = outSquare(16)
+
+console.log(resultThreeTwo);
+
+//4
+let k = Number(prompt('Сколько вам лет'));
+
+function age(k) {
+    if (0 <= k, k <= 12) {
+        alert('Привет, друг!');
+    } else if (13 <= k) {
+        alert('Добро пожаловать!');
+    } else {
+        alert('Вы ввели неправильное значение');
+    }
+}
+let resultFour = age(k);
+
+console.log(resultFour);
+
+//5
+let p = Number(prompt('Напишите первое из двух чисел для вычисления произведения'));
+let r = Number(prompt('Напишите второе из двух чисел для вычисления произведения'));
+
+function examinationAndSum(p) {
+    if (p, r) {
+        alert(p * r);
+    } else {
+        alert('Одно или оба значения не являются числом');
+    }
+}
+
+let resultFive = examinationAndSum(p)
+
+console.log(resultFive);
+
+
+//6
+let o = Number(prompt('Напишите любое число для нас от 1 до 10'));
+
+function raiseToAPower(o) {
+    if (1 <= o, o <=10) {
+        alert(`${o} в кубе равняется ${o ** 3}!`);
+    } else {
+        alert('Переданный параметр не является числом или не тем числом');
+    }
+}
+
+let resultSix = raiseToAPower(o)
+
+console.log(resultSix);
+
+//7
+const circle1 = {
+    radius: 25,
+    area: function getArea() {
+        console.log (circle1.radius * circle1.radius * 3.14);
+    },
+    perimeter: function getPerimeter() {
+        console.log (circle1.radius * 2 * 3.14);
+    },
+};
+
+console.log(circle1.area());
+console.log(circle1.perimeter());
+
+
+const circle2 = {
+    radius: 34,
+    area: function getArea() {
+        console.log (circle2.radius * circle1.radius * 3.14);
+    },
+    perimeter: function getPerimeter() {
+        console.log (circle2.radius * 2 * 3.14);
+    },
+};
+
+console.log(circle2.area());
+console.log(circle2.perimeter());
+
+//8
+function game1() {
+    let monthNumber = Number(prompt('Введите порядковый номер месяца, чтобы узнать к какому сезону он относится'));
+    switch (monthNumber) {
+        case 12:
+            alert('Зима');
+            break;
+        case 1:
+            alert('Зима');
+            break;
+        case 2:
+            alert('Зима');
+            break;
+        case 3:
+            alert('Весна');
+            break;
+        case 4:
+            alert('Весна');
+            break;
+        case 5:
+            alert('Весна');
+            break;
+        case 6:
+            alert('Лето');
+            break;
+        case 7:
+            alert('Лето');
+            break;
+        case 8:
+            alert('Лето');
+            break;
+        case 9:
+            alert('Осень');
+            break;
+        case 10:
+            alert('Осень');
+            break;
+        case 11:
+            alert('Осень');
+            break;
+        default: alert('Конец света');
+            break;
+    }
+}
 

@@ -128,7 +128,7 @@ a {
   flex-direction: column;
 }
 .main .section__content__right {
-  background-image: url(/img/undraw_video_game_night_8h8m\ 1.svg);
+  background-image: url(img/undraw.svg);
   width: 100%;
   height: 268px;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@ a {
     flex-direction: column;
   }
   .main .section__content__right {
-    background-image: url(/img/undraw_video_game_night_8h8m\ 1.svg);
+    background-image: url(img/undraw.svg);
     width: 100%;
     height: 268px;
     background-repeat: no-repeat;
